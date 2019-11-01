@@ -8,10 +8,14 @@
 '''
 
 import numpy as np
+ 
+a = np.array([[1,2,3], [4,5,6],[7,8,9]])
+print(a)
+b = a[0:2, 1:3]
+c = a[1:3,[1,2]]
+d = a[...,1:]
+print(b)
+print(c)
+print(d)
 
-a = np.arange(24) 
-print(a) 
-print (a.ndim)         # a 现只有一个维度
-# 现在调整其大小
-b = a.reshape(2,4,3)  # b 现在拥有三个维度
-print (b.ndim)
+print(a[0:2])
